@@ -47,6 +47,9 @@ export default function UserListHead({
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={onSelectAllClick}
+            style={{
+              color: '#74D3FF',
+            }}
           />
         </TableCell>
         {headLabel.map((headCell) => (
